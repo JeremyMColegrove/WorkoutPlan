@@ -1,0 +1,145 @@
+{
+    "exercises": [
+      {
+        "id": "day1-exercise1",
+        "day": 1,
+        "exercise": "Bench press",
+        "sets": 4,
+        "reps": "8-12"
+      },
+      {
+        "id": "day1-exercise2",
+        "day": 1,
+        "exercise": "Dumbbell flyes",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day1-exercise3",
+        "day": 1,
+        "exercise": "Tricep dips",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day1-exercise4",
+        "day": 1,
+        "exercise": "Overhead tricep extensions",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day1-exercise5",
+        "day": 1,
+        "exercise": "Close-grip bench press",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "id": "day2-exercise1",
+        "day": 2,
+        "exercise": "Lat pulldowns",
+        "sets": 4,
+        "reps": "8-12"
+      },
+      {
+        "id": "day2-exercise2",
+        "day": 2,
+        "exercise": "Seated cable rows",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day2-exercise3",
+        "day": 2,
+        "exercise": "Bicep curls",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day2-exercise4",
+        "day": 2,
+        "exercise": "Hammer curls",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day2-exercise5",
+        "day": 2,
+        "exercise": "Cable face pulls",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day4-exercise1",
+        "day": 4,
+        "exercise": "Military press",
+        "sets": 4,
+        "reps": "8-12"
+      },
+      {
+        "id": "day4-exercise2",
+        "day": 4,
+        "exercise": "Dumbbell lateral raises",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day4-exercise3",
+        "day": 4,
+        "exercise": "Rear delt flyes",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day4-exercise4",
+        "day": 4,
+        "exercise": "Russian twists",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day4-exercise5",
+        "day": 4,
+        "exercise": "Plank",
+       
+        "sets": 3,
+        "reps": "30-60 seconds"
+      },
+      {
+        "id": "day5-exercise1",
+        "day": 5,
+        "exercise": "Barbell squats",
+        "sets": 4,
+        "reps": "8-12"
+      },
+      {
+        "id": "day5-exercise2",
+        "day": 5,
+        "exercise": "Lunges",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day5-exercise3",
+        "day": 5,
+        "exercise": "Leg press",
+        "sets": 3,
+        "reps": "12-15"
+      },
+      {
+        "id": "day5-exercise4",
+        "day": 5,
+        "exercise": "Calf raises",
+        "sets": 3,
+        "reps": "15-20"
+      },
+      {
+        "id": "day5-exercise5",
+        "day": 5,
+        "exercise": "Glute bridges",
+        "sets": 3,
+        "reps": "12-15"
+      }
+    ]
+}        

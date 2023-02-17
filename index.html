@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Workout Plan</title>
+	<style>
+        #container {
+            width:100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: center;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		tr:hover {background-color: #f5f5f5;}
+	</style>
+</head>
+<body>
+
+	<h1>My Workout Plan</h1>
+
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Exercise</th>
+                    <th>Number of Sets</th>
+                    <th>Reps</th>
+                    <th>Check</th>
+                </tr>
+            </thead>
+            <tbody id="exercise-table-body">
+            </tbody>
+        </table>
+    </div>
+	<script>
+		// Load exercise data from JSON file
+		fetch('exercises.json')
+			.then(response => response.json())
+			.then(data => {
+				const tableBody = document.getElementById('exercise-table-body');
+				data.exercises.forEach(exercise => {
+					const row = document.createElement('tr');
+					const dayCell = document.createElement('td');
+					dayCell.textContent = exercise.day;
+					row.appendChild(dayCell);
+					const exerciseCell = document.createElement('td');
+					exerciseCell.textContent = exercise.exercise;
+					row.appendChild(exerciseCell);
+					const setsCell = document.createElement('td');
+					setsCell.textContent = exercise.sets;
+					row.appendChild(setsCell);
+					const repsCell = document.createElement('td');
+					repsCell.textContent = exercise.reps;
+					row.appendChild(repsCell);
+					const checkCell = document.createElement('td');
+					const checkbox = document.createElement('input');
+					checkbox.type = 'checkbox';
+                    if (exercise.day % 2 == 0) {
+                        row.style.backgroundColor = "#DFDFDF"
+                    } else {
+                        row.style.backgroundColor = "#FFFF"
+                    }
+					checkbox.id = exercise.id;
+					checkbox.onclick = function() {
+						localStorage.setItem(exercise.id, checkbox.checked);
+					};
+					checkCell.appendChild(checkbox);
+					row.appendChild(checkCell);
+					tableBody.appendChild(row);
+
+					// Set checkbox state from local storage
+					const checkboxState = localStorage.getItem(exercise.id);
+					if (checkboxState === 'true') {
+						checkbox.checked = true;
+					} else {
+						checkbox.checked = false;
+					}
+				});
+			});
+	</script>
+
+</body>
+</html>
